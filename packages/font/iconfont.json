@@ -1,0 +1,37 @@
+{
+  "id": "2500256",
+  "name": "myFirstUi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7826085",
+      "name": "close",
+      "font_class": "baseline-close-px",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1420877",
+      "name": "share",
+      "font_class": "share",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "1471838",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "19805006",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    }
+  ]
+}
