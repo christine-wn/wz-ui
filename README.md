@@ -1,4 +1,4 @@
-# my-ui
+# wz-ui
 
 ## Project setup
 ```
