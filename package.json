@@ -1,7 +1,11 @@
 {
-  "name": "my-ui",
+  "name": "wz-ui-component",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/wz-ui.umd.min.js",
+  "author": { 
+    "name": "王娜"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
