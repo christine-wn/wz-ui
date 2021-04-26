@@ -1,18 +1,16 @@
 <template>
-  <transition name="dialog-fade">
     <!-- @click.self避免冒泡，只有点击自己时才能触发   -->
-    <div class="wz-dialog_wrapper">
+    <transition name="dialog-fade">
+    <div class="wz-dialog_wrapper" v-show="visible" @click.self="handleClose">
       <div class="wz-dialog" :style="{width, marginTop: top}">
         <div class="wz-dialog_header">
-          <slot name="title">
             <!-- 将span放到slot内，这样不仅可以定义title文本，还可以定义样式等 -->
             <slot name="title">
               <span class="wz-dialog_title">
                 {{ title }}
               </span>
             </slot>
-          </slot>
-          <button class="wz-dialog_headerbtn">
+          <button class="wz-dialog_headerbtn" @click="handleClose">
             <i class="wz-icon-close"></i>
           </button>
         </div>
@@ -27,7 +25,7 @@
         </div>
       </div>
     </div>
-  </transition>
+    </transition>
 </template>
 <script>
 export default {
@@ -44,6 +42,15 @@ export default {
     top: {
       type: String,
       default: '15vh'
+    },
+    visible: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    handleClose() {
+      this.$emit('update:visible', false);
     }
   }
 };
@@ -85,7 +92,7 @@ export default {
         outline: none;
         cursor: pointer;
         font-size: 16px;
-        .one-icon-close {
+        .one-wz-icon-close {
           color: 909399;
         }
       }

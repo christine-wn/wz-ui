@@ -1,5 +1,6 @@
 import Button from './button'
 import Dialog from './dialog'
+import './fonts/iconfont.css'
 
 const components = [
     Button,
