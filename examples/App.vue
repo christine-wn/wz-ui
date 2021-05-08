@@ -1,17 +1,8 @@
 <template>
   <div id="app">
-    <wz-button type="primary" @click="visible=true">按钮</wz-button>
-    <wz-dialog title="温馨提示" width="30%" top="200px" :visible.sync="visible">
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
-      <template v-slot:footer>
-        <wz-button type="primary" @click="visible=false">确定</wz-button>
-        <wz-button>取消</wz-button>
-      </template>
-    </wz-dialog>
+    <!-- <wz-input placeholder="请输入用户名" type="password" name="username" disabled></wz-input> -->
+    <wz-input placeholder="请输入用户名" v-model="input" clearable></wz-input>
+    <wz-input placeholder="请输入用户名" v-model="input" show-password></wz-input>
   </div>
 </template>
 
@@ -21,11 +12,12 @@ export default {
   name: 'App',
   data() {
     return {
-      visible: false 
+      visible: false,
+      input: ''
     }
   },
   methods: {
-    
+
   }
 }
 </script>

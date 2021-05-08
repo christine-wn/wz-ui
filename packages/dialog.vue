@@ -56,7 +56,9 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
+//scoped会给当前组件的模板中的所有的元素都添加一个随机的属性
+//scoped会给当前组件中所有的样式 页添加一个对应的属性选择器
 .wz-dialog_wrapper {
   position: fixed;
   top: 0;
@@ -92,7 +94,7 @@ export default {
         outline: none;
         cursor: pointer;
         font-size: 16px;
-        .one-wz-icon-close {
+        .wz-icon-close {
           color: 909399;
         }
       }
@@ -107,7 +109,7 @@ export default {
       padding: 10px 20px 20px;
       text-align: right;
       box-sizing: border-box;
-      ::v-deep .wz-button:first-child {
+      /deep/ .wz-button:first-child {
         margin-right: 20px;
       }
     }

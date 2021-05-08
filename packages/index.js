@@ -1,10 +1,12 @@
 import Button from './button'
 import Dialog from './dialog'
+import Input from './input'
 import './fonts/iconfont.css'
 
 const components = [
     Button,
-    Dialog
+    Dialog,
+    Input
   ]
 const install = function(Vue) {
     components.forEach(component => {
