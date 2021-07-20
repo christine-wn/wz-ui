@@ -1,12 +1,14 @@
 import Button from './button'
 import Dialog from './dialog'
 import Input from './input'
+import Switch from './switch'
 import './fonts/iconfont.css'
 
 const components = [
     Button,
     Dialog,
-    Input
+    Input,
+    Switch
   ]
 const install = function(Vue) {
     components.forEach(component => {

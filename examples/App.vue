@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <!-- <wz-input placeholder="请输入用户名" type="password" name="username" disabled></wz-input> -->
-    <wz-input placeholder="请输入用户名" v-model="input" clearable></wz-input>
-    <wz-input placeholder="请输入用户名" v-model="input" show-password></wz-input>
+    <wz-input placeholder="请输入用户名" v-model="username" clearable></wz-input>
+    <wz-input placeholder="请输入用户名" v-model="username" show-password></wz-input>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       visible: false,
-      input: ''
+      username: ''
     }
   },
   methods: {

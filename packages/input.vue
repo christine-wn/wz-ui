@@ -13,7 +13,7 @@
       :value="value"
       @input="handleInput"
     />
-    <span class="wz-input_suffix">
+    <span class="wz-input_suffix" v-if="showSuffix">
       <i class="wz-input_icon wz-icon-close1" v-if="clearable" @click="clear"></i>
       <i class="wz-input_icon wz-icon-view" v-if="showPassword" @click="handlePassword"></i>
     </span>
